@@ -1,3 +1,7 @@
+const mongoose = require('mongoose');
+const User = require('./../models/User');
+
+
 exports.userFindAll= async (req,res)=>{
     try{
         const users = await User.find();

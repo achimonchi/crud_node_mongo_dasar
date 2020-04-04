@@ -12,18 +12,18 @@ const {
 const router = express.Router();
 
 // get all users
-router.get("/", async (req,res,next)=>{})
+router.get("/", userFindAll)
 
 // get user by id
-router.get("/:id_user", async (req,res,next)=>{})
+router.get("/:id_user", userFindByID)
 
 // add user
-router.post("/", async (req,res,next)=>{})
+router.post("/", userSave)
 
 // update user
-router.patch("/:id", async (req,res,next)=>{})
+router.patch("/:id", userPatch)
 
 // delete user
-router.delete("/:id", async (req,res,next)=>{});
+router.delete("/:id", userDelete);
 
 module.exports = router;
